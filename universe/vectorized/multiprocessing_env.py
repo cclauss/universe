@@ -316,7 +316,7 @@ class MultiprocessingEnv(core.Env):
         close_n(self.worker_n)
 
 if __name__ == '__main__':
-    env_n = make('Pong-v3')
+    env_n = gym.make('Pong-v3')
     env_n.configure()
     env_n.reset()
     print(env_n.step([0] * 10))
